@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.formatoProductCard{
+    width: 20vw;
+    height: 50.6vh;
+    margin: 2vh 0 2vh 0;
+    padding: 0 0 5vh 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.875vh;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+
+.image{
+    background-color: white;
+    padding-top: 3vh;
+}
+
+.texto{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vh;
+}

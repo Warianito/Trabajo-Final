@@ -1,0 +1,39 @@
+:root{
+    --color-background: #F7F8FA;
+    --color-titulos: #4D5E80;
+}
+
+
+.formatoBrand{
+    display: flex;
+    gap: 2.2vw;
+    color: var(--color-titulos);
+
+}
+
+.formatoBuscador{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.bi-search{
+    position: absolute;
+    display: block;
+    top: 0.35rem;
+    left:0.35rem;
+}
+
+.formatoBuscador input{
+    padding: 1vh 5vw 1vh 3vw;
+    border-radius:30px;
+    border: none;
+    box-shadow: 0 5px 8px 4px #EDEFF2;
+}
+
+.formatoMenu{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    color: var(--color-titulos);
+}
