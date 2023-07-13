@@ -2,7 +2,9 @@ import React from 'react'
 import './NavBar.css'
 import { NavLink } from 'react-router-dom'
 
+
 const NavBar = () => {
+ 
   return (
     <>
     <div className="formatoBrand">
@@ -11,7 +13,8 @@ const NavBar = () => {
       </div>
       <div className="formatoBuscador">
         <i className="bi bi-search"></i>
-        <input type="text" placeholder="Search Goods ..."/>
+        <input
+         type="text" placeholder="Search Goods ..."/>
       </div>
       <div className="formatoMenu">
         <h3>Contact</h3>

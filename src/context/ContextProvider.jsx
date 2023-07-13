@@ -169,9 +169,14 @@ const ContextProvider = ({children}) => {
         }
         
     }
+    const getTotal = () => {
+        let total = 0;
+        cart.forEach(product => total += product.precio * product.quantity );
+        return(total);
+    }
 
     return (
-        <Context.Provider value={{products, getProductById, cart, addProductCart, isInCart, getProductCartById}}>
+        <Context.Provider value={{products, getProductById, cart, addProductCart, isInCart, getProductCartById, getTotal}}>
             {children}
         </Context.Provider>
       )
