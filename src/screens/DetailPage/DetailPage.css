@@ -1,0 +1,46 @@
+
+.formatoDetail{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 2vh 5vw 2vh 0
+}
+
+.formatoTituloDetail{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    padding-left: 0.5vw;
+}
+
+.formatoCuerpoDetail{
+    display: flex;
+    gap: 10vw;
+    text-align: justify;
+    padding-left: 5vw;
+}
+
+.formatoContenedorImgPr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.contenedorComprar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh
+}
+
+@media screen and (max-width: 767px) {
+    .control-formatoCuerpoDetail{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .control-formatoTituloDetail h6{
+        display: none;
+    }
+}

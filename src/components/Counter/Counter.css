@@ -1,0 +1,40 @@
+
+.formatoBtnContador{
+    display: flex;
+    
+    align-items: center;
+}
+
+.btn-dec{
+    padding: 1vh 1.15vw 1vh 1.15vw;
+    
+    font-size: 1rem;
+}
+
+.btn-inc{
+    padding: 1vh 1vw 1vh 1vw;
+    font-size: 1rem;
+}
+
+.contenedorCantidad{
+    
+    padding: 2vh 1vw 2vh 1vw;
+    font-size: 2rem;
+}
+
+.btn-confirm{
+    padding: 3vh 5vw 3vh 5vw;
+    border-radius: 5%;
+
+}
+
+.btn-dec:hover{
+    background-color: red;
+}
+
+.btn-inc:hover{
+    background-color: green;
+}
+.btn-confirm:hover {
+    background-color: orange;
+  }

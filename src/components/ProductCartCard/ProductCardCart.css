@@ -1,0 +1,53 @@
+.contenedorCartCard{
+    display: flex;
+    justify-content:left;
+    padding: 5vh 0 5vh 0;
+}
+
+.imageCartCard{
+    width: 20vw;
+    text-align: center;
+}
+
+.textoCartCard{
+    padding: 1vh 2vw 1vh 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75vw;
+}
+
+.contenedorTamaño{
+    width: 20vw;
+}
+
+@media screen and (max-width: 767px) {
+
+    .control-contenedorCartCard{
+        padding: 3vh 0vw 3vh 0vw;
+        width: 80vw;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .control-imagenCardCart{
+        width: 100vw;
+    }
+    
+    .control-textoCartCard{
+        display: flex;
+        flex-direction: column;
+        padding: 1vh 0 1vh 0;
+        align-items: center;
+        text-align: center;
+        gap:2vh;
+    }
+
+    .control-contenedorTamaño{
+        width: 100vw;
+    }
+}

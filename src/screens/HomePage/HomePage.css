@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root{
+    --color-background: #F7F8FA;
+    --color-titulos: #4D5E80;
+}
+
+
 .formatoNavegador{
     display: flex;
     justify-content: space-between;
@@ -12,17 +18,67 @@
     border-bottom: 1px solid black;
 }
 
+
+
+.formatoBrand{
+    display: flex;
+    align-items: center;
+    gap: 2.2vw;
+    color: var(--color-titulos);
+}
+
+.formatoBrand img{
+    height: 8vh;
+}
+
+.formatoBuscador{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.bi-search{
+    position: absolute;
+    display: block;
+    top: 0.35rem;
+    left:0.35rem;
+}
+
+.formatoBuscador input{
+    padding: 1vh 5vw 1vh 3vw;
+    border-radius:30px;
+    border: none;
+    box-shadow: 0 5px 8px 4px #EDEFF2;
+}
+
+.formatoMenu{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    color: var(--color-titulos);
+}
+
+.bi-binoculars{
+    display: none;
+}
+
+
+.titulo{
+    padding-top: 5vh;
+}
+
 .mainContainer{
+    padding: 5vh 5.625vw 5vh 5.625vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 5.625vw;
-    padding-left: 5.625vw;
+    gap:1vw;
     
 }
 
 .formato{
-    width: 75%;
+    /* width: 75%; */
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -33,10 +89,53 @@
 }
 
 .sideBar{
-    width: 15.9vw;
+    /* width: 15.9vw; */
     margin-top: 2vh;
     display: flex;
     flex-direction: column;
     gap: 2vh;
 }
 
+.formatoFooter{
+    display: flex;
+    flex-direction: row;
+    padding: 8vh 0 2vh 0;
+    gap: 2vw;
+    border-top: 1px solid black;
+}
+
+@media screen and (max-width: 767px ){
+    .menu-control .bi-binoculars{
+        display: flex;
+    }
+
+    .buscador-control .bi-search{
+        display: none;
+    }
+    .buscador-control input{
+        display: none;
+    }
+
+    .brand-control h2{
+        display: none;
+    }
+
+    .navegador-control{
+        padding: 5vh 2vw 5vh 2%;
+        font-size: 1.5rem;
+    }
+
+    .sideBar-control{
+        display: none;
+    }
+
+    .main-control{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .control-footer{
+        display: flex;
+        flex-direction: column;
+    }
+}

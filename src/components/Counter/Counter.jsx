@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './Counter.css'
 import { useCustomContext } from '../../context/ContextProvider'
 
 const Counter = ({initialValue, stock, id}) => {
@@ -8,12 +9,12 @@ const Counter = ({initialValue, stock, id}) => {
     return (
     <>
         
-        <div>
-            <button onClick={()=> setQuantity(quantity > 1 ? quantity - 1 : quantity)}>-</button>
-            <span>{quantity}</span>
-            <button onClick={()=> setQuantity(quantity === stock ? quantity  : quantity + 1)}>+</button>
+        <div className="formatoBtnContador">
+            <button className="btn-dec" onClick={()=> setQuantity(quantity > 1 ? quantity - 1 : quantity)}>-</button>
+            <span className="contenedorCantidad">{quantity}</span>
+            <button className="btn-inc" onClick={()=> setQuantity(quantity === stock ? quantity  : quantity + 1)}>+</button>
         </div>
-        <button onClick={ () => addProductCart(id, quantity)}>Confirmar</button>
+        <button className="btn-confirm" onClick={ () => addProductCart(id, quantity)}>Confirmar</button>
         </>
   )
 }

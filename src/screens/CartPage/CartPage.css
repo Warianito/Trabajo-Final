@@ -1,0 +1,18 @@
+.contenedorCarrito{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalContainer{
+    font-size: 2rem;
+}
+
+.contenedorProductos{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    
+}

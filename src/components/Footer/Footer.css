@@ -1,0 +1,73 @@
+
+.containerFooter{
+    display: flex;
+    flex-direction: row;
+    padding: 8vh 0 2vh 0;
+    gap: 2vw;
+    border-top: 1px solid black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.control-ContainerFooterMobile{
+    display: none;
+}
+
+@media  screen and (max-width: 767px) {
+
+    .control-containerFooter{
+        display: none;
+    }
+
+    .containerFooterMobile{
+        display: flex;
+        flex-direction: column;
+        gap: 8vh;
+        padding: 8vh 0 2vh 0;
+        border-top: 1px solid black;
+    
+    }
+
+    .encabezadoFooter{
+        display: flex;
+        gap: 13.8vw;
+        align-items: center;
+    }
+
+    .containerDireccion{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+
+    .cuerpoFooter{
+        display: flex;
+        gap: 10vw;
+    }
+
+    .cuerpo1{
+        display: flex;
+        flex-direction: column;
+        gap:1.5vh;
+    }
+    .cuerpo2{
+        display: flex;
+        flex-direction: column;
+        gap:1.5vh;
+    }
+
+    .politics{
+        display: flex;
+        flex-direction: column;
+        gap:1.5vh;
+    }
+
+    .politicsTerms{
+        display: flex;
+        gap: 6vw;
+    }
+    
+}
