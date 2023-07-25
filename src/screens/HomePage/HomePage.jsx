@@ -18,7 +18,7 @@ const HomePage = () => {
     <>
     <div className="formatoNavegador navegador-control">
     <div className="formatoBrand brand-control">
-        <img src="https://github.com/Warianito/Trabajo-Final/tree/master/images/eaten-apple.svg" alt="Logo de la marca"/>
+        <img src="../../img/eaten-apple.svg" alt="Logo de la marca"/>
         <h2>Eaten Apple</h2>
       </div>
       <div className="formatoBuscador buscador-control">
