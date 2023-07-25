@@ -7,7 +7,7 @@ const ProductCard = ({producto}) => {
     <div>
          <Link className="formatoProductCard control-ProductCard" to={'/detail/' + producto.id}>
         <div className= "image image-control" >
-         <img src={producto.img}></img>
+         <img src={"public/" + producto.img}></img>
         </div>
         <div className="texto">
           <h2>{producto.tipo}</h2>
